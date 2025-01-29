@@ -1,65 +1,98 @@
-#🛠️ GESTIONNAIRE DE STOCKS
-A Qt 6 project for managing product stocks, built with Qt Creator and compiled using MSVC.
+🛠️ GESTIONNAIRE DE STOCKS
+                                  
+                                  A Qt 6 project for managing product stocks, built with Qt Creator and compiled using MSVC.
+                                  
+                                  📌 Getting Started
 
-📌 Getting Started
-🔹 Prerequisites
-Ensure you have the following installed:
+                                  
+                                  
+                                  🔹 Prerequisites
+                                  
+                                      Ensure you have the following installed:
+                                      
+                                      Qt 6 (Qt Creator)
+                                      
+                                      MSVC Compiler
+                                      
+                                      CMake
 
-Qt 6 (Qt Creator)
-MSVC Compiler
-CMake
-🔹 Installation & Setup
-Clone the repository
+                                  
+                                  
+                                  🔹 Installation & Setup
+                                  
+                                      Clone the repository
+                                      
+                                      git clone https://github.com/mxou-954/GESTIONAIRE_STOCKS.git
+                                      
+                                      Open the project in Qt Creator
+                                      
+                                      Open Qt Creator
+                                      
+                                      Load all files from the cloned repository
+                                      
+                                      Select CMakeLists.txt (since there is no .pro file)
+                                      
+                                      Compile & Run
 
-bash
-Copier
-Modifier
-git clone https://github.com/mxou-954/GESTIONAIRE_STOCKS.git
-Open the project in Qt Creator
+                                  
+                                  
+                                  ⚠️ Make sure the correct MSVC Kit is selected
+                                  
+                                  ⚠️ Click on Build & Run
+                                  
+                                  ⚠️ The SQLite database should be accessible in the build directory
+                                  
+                                  ⚠️ Note: If the build directory is not created automatically, ensure Qt Creator is correctly set up to generate it.
 
-Open Qt Creator
-Load all files from the cloned repository
-Select CMakeLists.txt (since there is no .pro file)
-Compile & Run
+                                  
+                                  
+                                  🗂️ Project Structure
+                                  
+                                      📂 GESTIONNAIRE_STOCKS
+                                      │── 📁 Forms             # UI forms (Qt Designer)
+                                      │── 📁 Header_Files      # C++ header files (.h)
+                                      │── 📁 Source_Files      # C++ source files (.cpp)
+                                      │── 📁 OpenXLSX          # Excel file handling library
+                                      │── 📁 docs              # Documentation
+                                      │── 📁 build             # (Generated upon compilation)
+                                      │── CMakeLists.txt       # CMake build system
+                                      │── README.md            # This file
 
-Make sure the correct MSVC Kit is selected
-Click on Build & Run
-The SQLite database should be accessible in the build directory
-⚠️ Note: If the build directory is not created automatically, ensure Qt Creator is correctly set up to generate it.
 
-🗂️ Project Structure
-bash
-Copier
-Modifier
-📂 GESTIONNAIRE_STOCKS
-│── 📁 Forms             # UI forms (Qt Designer)
-│── 📁 Header_Files      # C++ header files (.h)
-│── 📁 Source_Files      # C++ source files (.cpp)
-│── 📁 OpenXLSX          # Excel file handling library
-│── 📁 docs              # Documentation
-│── 📁 build             # (Generated upon compilation)
-│── CMakeLists.txt       # CMake build system
-│── README.md            # This file
-📊 Database Access (SQLite)
-The project uses SQLite for data storage.
-The database file should be generated inside the build folder.
-📜 Documentation
-The full project documentation is available in:
+                                  
+                                  📊 Database Access (SQLite)
+                                  
+                                      The project uses SQLite for data storage.
+                                      
+                                      The database file should be generated inside the build folder.
 
-bash
-Copier
-Modifier
-📁 docs/html/index.html
-To view it:
+                                  
+                                  
+                                  📜 Documentation
+                                  
+                                      The full project documentation is available in:
+                                      
+                                      📁 docs/html/index.html
+                                      
+                                      To view it:
+                                      
+                                      Open docs/html/index.html in your web browser.
 
-Open docs/html/index.html in your web browser.
-📜 License
-Make sure to read the license before using or modifying the project.
+                                  
+                                  
+                                  📜 License
+                                  
+                                      Make sure to read the license before using or modifying the project.
 
-🤝 Contributions & Feedback
-This is version 1.0, so bugs and issues may appear.
-I welcome any suggestions or improvements! Feel free to:
-
-Report issues
-Suggest new features
-Contribute to the project
+                                  
+                                  
+                                  🤝 Contributions & Feedback
+                                  
+                                      This is version 1.0, so bugs and issues may appear.
+                                      I welcome any suggestions or improvements! Feel free to:
+                                      
+                                      Report issues
+                                      
+                                      Suggest new features
+                                      
+                                      Contribute to the project
