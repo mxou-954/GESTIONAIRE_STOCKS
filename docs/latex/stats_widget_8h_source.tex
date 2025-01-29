@@ -1,0 +1,72 @@
+\doxysection{stats\+Widget.\+h}
+\hypertarget{stats_widget_8h_source}{}\label{stats_widget_8h_source}\index{Header\_Files/Widgets/statsWidget.h@{Header\_Files/Widgets/statsWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/***************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Nom\ du\ fichier\ \ \ \ :\ statsWidget.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Auteur\ \ \ \ \ \ \ \ \ \ \ \ :\ Courbeyrette\ Maxime}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Date\ de\ création\ \ :\ 28/01/2025}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Description\ \ \ \ \ \ \ :\ Gestion\ des\ stocks\ -\/\ Fichier\ lié\ à\ l'affichage\ des\ statistiques}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Dernière\ modification\ :}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ -\/\ 28/01/2025\ :\ Création}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2025\ Courbeyrette\ Maxime.\ Tous\ droits\ réservés.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ ***************************************************************************/}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ STATSWIDGET\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ STATSWIDGET\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ IMPORTATION\ DES\ LIBRAIRIES\ QT\ ********************************************************************}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QtCharts/QChartView>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QtCharts/QPieSeries>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <QtCharts/QBarSeries>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <QtCharts/QBarSet>}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ ********************************************************************}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00035\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }StatsWindow;\ \}}
+\DoxyCodeLine{00036\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_stats_widget_a01445ab01e4bbd3f846bbdfd153e8f36}{StatsWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_stats_widget_a01445ab01e4bbd3f846bbdfd153e8f36}{StatsWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_stats_widget_a5f4f9c4ca2dd2efb3b121e1eabadf5f9}{\string~StatsWidget}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stats_widget_ac9dc211586d3f4b3c36b7d756bef2239}{setCurrentWidget}}(\textcolor{keyword}{const}\ QString\ \&widgetName);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ signals:}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stats_widget_ad0dce46110757350bbffec7b28a6f607}{goToHome}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_home\_clicked();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00078\ \ \ \ \ Ui::StatsWindow\ *ui;\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ QChartView\ *chartView;\ \ }
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ searchStatsProductCategorySupplier();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ countPriceStock();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ productAndTime();}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

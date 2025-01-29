@@ -1,0 +1,76 @@
+\doxysection{Import\+Widget.\+h}
+\hypertarget{_import_widget_8h_source}{}\label{_import_widget_8h_source}\index{Header\_Files/Widgets/ImportWidget.h@{Header\_Files/Widgets/ImportWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/***************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Nom\ du\ fichier\ \ \ \ :\ ImportWidget.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Auteur\ \ \ \ \ \ \ \ \ \ \ \ :\ Courbeyrette\ Maxime}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Date\ de\ création\ \ :\ 27/01/2025}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Description\ \ \ \ \ \ \ :\ Gestion\ des\ stocks\ -\/\ Fichier\ lié\ à\ la\ gestion\ des\ importations}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Dernière\ modification\ :}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ -\/\ 27/01/2025\ :\ Finitions\ des\ détails}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2025\ Courbeyrette\ Maxime.\ Tous\ droits\ réservés.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ ***************************************************************************/}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ IMPORTWIDGET\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ IMPORTWIDGET\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ IMPORTATION\ DES\ LIBRAIRIES\ QT\ ********************************************************************}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QDragEnterEvent>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QDropEvent>}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ ********************************************************************}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00033\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }ImportWindow;\ \}}
+\DoxyCodeLine{00034\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_import_widget_ae12b80142c462e897cc15651364b4088}{ImportWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_import_widget_ae12b80142c462e897cc15651364b4088}{ImportWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_import_widget_a7859bab1e37b13f671f6dd7f87ee1e13}{\string~ImportWidget}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_import_widget_a92e5818aa114cf18633e39b1cb6c64b5}{setCurrentWidget}}(\textcolor{keyword}{const}\ QString\ \&widgetName);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ signals:}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_import_widget_a895ddd293e388a8ee93c564e906a4d18}{goToHome}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_home\_clicked();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \ \ Ui::ImportWindow\ *ui;\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ dragEnterEvent(QDragEnterEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ dropEvent(QDropEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ loadCSV(\textcolor{keyword}{const}\ QString\ \&filePath);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ importCSV(\textcolor{keyword}{const}\ QString\ \&filePath);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ loadJSON(\textcolor{keyword}{const}\ QString\ \&filePath);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ dropEventJSON(QDropEvent\ *event);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ importJSON(\textcolor{keyword}{const}\ QString\ \&filePath);}
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

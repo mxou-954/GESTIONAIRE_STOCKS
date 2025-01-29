@@ -1,0 +1,77 @@
+\doxysection{Supplier\+Widget.\+h}
+\hypertarget{_supplier_widget_8h_source}{}\label{_supplier_widget_8h_source}\index{Header\_Files/Widgets/SupplierWidget.h@{Header\_Files/Widgets/SupplierWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/***************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Nom\ du\ fichier\ \ \ \ :\ SupplierWidget.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Auteur\ \ \ \ \ \ \ \ \ \ \ \ :\ Courbeyrette\ Maxime}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Date\ de\ création\ \ :\ 27/01/2025}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Description\ \ \ \ \ \ \ :\ Gestion\ des\ stocks\ -\/\ Fichier\ lié\ à\ la\ gestion\ des\ fournisseurs}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Dernière\ modification\ :}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ -\/\ 27/01/2025\ :\ Finitions\ des\ détails}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2025\ Courbeyrette\ Maxime.\ Tous\ droits\ réservés.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ ***************************************************************************/}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ SUPPLIERWIDGET\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ SUPPLIERWIDGET\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ IMPORTATION\ DES\ LIBRAIRIES\ QT\ ********************************************************************}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ ********************************************************************}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }SupplierWindow;\ \}}
+\DoxyCodeLine{00032\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_supplier_widget_a0e8bc1773cb98de0f702bea27a933cc0}{SupplierWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_supplier_widget_a0e8bc1773cb98de0f702bea27a933cc0}{SupplierWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_supplier_widget_a883a5215bf1bc98df5bb678fce51213a}{\string~SupplierWidget}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_widget_a20878fe2bfdaf40e32e56baf5cf3ea40}{setCurrentWidget}}(\textcolor{keyword}{const}\ QString\ \&widgetName);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ signals:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_widget_aad379b70982681750eb517019c0c902c}{goToHome}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_addSupplier\_clicked();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ loadsupplierIntoComboBox();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_search\_5\_clicked();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_modif\_3\_clicked();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_search\_6\_clicked();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_deleteSupplier\_2\_clicked();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_home\_clicked();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ \ \ Ui::SupplierWindow\ *ui;\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ supplierTable(QTableWidget\ *tableWidget);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ foundId;\ }
+\DoxyCodeLine{00100\ \ \ \ \ QStringList\ customCategories;\ }
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

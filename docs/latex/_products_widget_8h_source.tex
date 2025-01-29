@@ -1,0 +1,97 @@
+\doxysection{Products\+Widget.\+h}
+\hypertarget{_products_widget_8h_source}{}\label{_products_widget_8h_source}\index{Header\_Files/Widgets/ProductsWidget.h@{Header\_Files/Widgets/ProductsWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/***************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Nom\ du\ fichier\ \ \ \ :\ ProductsWidget.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Auteur\ \ \ \ \ \ \ \ \ \ \ \ :\ Courbeyrette\ Maxime}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Date\ de\ création\ \ :\ 27/01/2025}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Description\ \ \ \ \ \ \ :\ Gestion\ des\ stocks\ -\/\ Fichier\ lié\ à\ la\ gestion\ des\ produits}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Dernière\ modification\ :}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ -\/\ 27/01/2025\ :\ Finitions\ des\ détails}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Copyright\ (c)\ 2025\ Courbeyrette\ Maxime.\ Tous\ droits\ réservés.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ ***************************************************************************/}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ PRODUCTSWIDGET\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ PRODUCTSWIDGET\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ IMPORTATION\ DES\ LIBRAIRIES\ QT\ ********************************************************************}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QTableWidget>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ ********************************************************************}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }ProductsWindow;\ \}}
+\DoxyCodeLine{00032\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_products_widget_a387dd6de92decc82c258dbbf88ed97ff}{ProductsWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_products_widget_a387dd6de92decc82c258dbbf88ed97ff}{ProductsWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_products_widget_a4b95571f2c441b87aba91ea3a3ebc0f6}{\string~ProductsWidget}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_products_widget_a25d407c2326b5b200913a39ea1077947}{setCurrentWidget}}(\textcolor{keyword}{const}\ QString\ \&widgetName);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ signals:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_products_widget_a131a0dfa79a364c1f40f560ada11f1d5}{goToHome}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_add\_clicked();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_home\_clicked();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_search\_clicked();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_modif\_clicked();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_search\_2\_clicked();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ loadCategoriesIntoComboBox();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ loadsupplierIntoComboBox();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \ \ Ui::ProductsWindow\ *ui;\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{struct\ }Product\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ QString\ qr;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ QString\ name;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ QString\ description;\ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ stock;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ price;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ QString\ category;\ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ QString\ supplier;\ \ \ \ \ }
+\DoxyCodeLine{00113\ \ \ \ \ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ QList<Product>\ products;\ }
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ tableProduct(QTableWidget\ *tableWidget,\ \textcolor{keyword}{const}\ QString\ \&orderBy=\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{int}\ SearchID(QSpinBox\ *productId,\ QLabel\ *msg);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ onButtonBoxAccepted(\textcolor{keywordtype}{int}\ foundId);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ onButtonBoxRejected();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{int}\ foundId;\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{int}\ lastProductId\ =\ 0;\ }
+\DoxyCodeLine{00145\ \};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
