@@ -8,31 +8,21 @@
                                   
                         🔹 Prerequisites
                                   
-                            Ensure you have the following installed:
-                                      
-                            Qt 6 (Qt Creator)
-                                      
-                            MSVC Compiler
-                                      
-                            CMake
+                            Ensure you have the following installed:    
+                            ➡️ Qt 6 (Qt Creator)      
+                            ➡️ MSVC Compiler        
+                            ➡️ CMake
 
                                   
                                   
                         🔹 Installation & Setup
                                   
-                            Clone the repository
-                                      
-                            git clone https://github.com/mxou-954/GESTIONAIRE_STOCKS.git
-                                      
-                            Open the project in Qt Creator
-                                      
-                            Open Qt Creator
-                                      
-                            Load all files from the cloned repository
-                                      
-                            Select CMakeLists.txt (since there is no .pro file)
-                                      
-                            Compile & Run
+                            1️⃣ Clone the repository     
+                            2️⃣ git clone https://github.com/mxou-954/GESTIONAIRE_STOCKS.git   
+                            3️⃣ Open the project in Qt Creator                                           
+                            4️⃣ Load all files from the cloned repository   
+                            5️⃣ Select CMakeLists.txt (since there is no .pro file)    
+                            6️⃣ Compile & Run
 
                                   
                                   
@@ -62,20 +52,16 @@
                                   
                         📊 Database Access (SQLite)
                                   
-                            The project uses SQLite for data storage.
-                                      
+                            The project uses SQLite for data storage.    
                             The database file should be generated inside the build folder.
 
                                   
                                   
                         📜 Documentation
                                   
-                            The full project documentation is available in:
-                                      
-                            📁 docs/html/index.html
-                                      
-                            To view it:
-                                      
+                            The full project documentation is available in:      
+                            📁 docs/html/index.html     
+                            To view it:     
                             Open docs/html/index.html in your web browser.
 
                                   
@@ -91,8 +77,6 @@
                           This is version 1.0, so bugs and issues may appear.
                           I welcome any suggestions or improvements! Feel free to:
                                       
-                            Report issues
-                                      
-                            Suggest new features
-                                      
-                            Contribute to the project
+                            👉 Report issues        
+                            👉 Suggest new features    
+                            👉 Contribute to the project
